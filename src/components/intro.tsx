@@ -26,7 +26,7 @@ export const Intro = () => {
           duration: 0.2,
         }}
         href="https://github.com/Weedanta"
-        className="bg-muted mb-4 overflow-hidden rounded-full md:w-72"
+        className="bg-muted mb-4 overflow-hidden rounded-full w-64 md:w-72"
       >
         <Image src="/img/profile.png" width={'2000'} height={'2000'} className="w-full object-cover" alt="" />
       </motion.a>
