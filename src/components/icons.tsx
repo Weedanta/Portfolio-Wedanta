@@ -263,7 +263,12 @@ export const Icons = {
     </svg>
   ),
   java: (props: LucideProps) => (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 52" {...props} fill="currentColor">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 40 52"
+      {...props}
+      fill="currentColor"
+    >
       <g id="Layer_2" data-name="Layer 2">
         <g id="Q3_icons" data-name="Q3 icons">
           <g>

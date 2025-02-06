@@ -24,10 +24,9 @@ export const Intro = () => {
           duration: 0.2,
         }}
         href="https://github.com/Weedanta"
-        className="bg-muted rounded-full md:w-72 overflow-hidden mb-4"
+        className="bg-muted mb-4 overflow-hidden rounded-full md:w-72"
       >
-        <img src="/img/profile.png" className='w-full object-cover' alt="" />
-        
+        <img src="/img/profile.png" className="w-full object-cover" alt="" />
       </motion.a>
       <motion.h1
         initial={{ opacity: 0, y: 100 }}
@@ -45,7 +44,8 @@ export const Intro = () => {
         className="text-muted-foreground max-w-lg"
       >
         I&apos;m front-end web and mobile developer from Indonesia. I enjoy
-        building sites and apps. I&apos;m Undergraduate Information Technology Student at Brawijaya University
+        building sites and apps. I&apos;m Undergraduate Information Technology
+        Student at Brawijaya University
       </motion.p>
       <motion.div
         initial={{ opacity: 0, y: 100 }}

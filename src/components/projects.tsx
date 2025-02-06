@@ -36,12 +36,7 @@ export const Projects = () => {
       </motion.div>
       <div className="flex flex-col gap-8 md:flex-row">
         {projectsData.map((project, index) => (
-          <Project
-            key={project.title}
-            project={project}
-            index={index}
-            
-          />
+          <Project key={project.title} project={project} index={index} />
         ))}
       </div>
     </section>

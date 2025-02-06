@@ -10,8 +10,6 @@ import { ThemeToggle } from '@/components/theme-toggle';
 import { projectsData } from '@/lib/data';
 
 const Home = async () => {
-  
-
   return (
     <>
       <div className="container flex flex-col items-center">
@@ -19,7 +17,7 @@ const Home = async () => {
         <Intro />
         <SectionDivider />
         <About />
-        <Projects/>
+        <Projects />
         <Experience />
         <Contact />
         <Footer />

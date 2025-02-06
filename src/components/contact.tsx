@@ -74,10 +74,15 @@ export const Contact = () => {
       />
 
       <form
-        action="https://api.web3forms.com/submit" method="POST"
+        action="https://api.web3forms.com/submit"
+        method="POST"
         className="flex flex-col items-center gap-5"
       >
-        <input type="hidden" name="access_key" value="53e9333c-266c-4f4c-8613-93a45f63a91e"></input>
+        <input
+          type="hidden"
+          name="access_key"
+          value="53e9333c-266c-4f4c-8613-93a45f63a91e"
+        ></input>
         <div className="w-full max-w-xl">
           <label
             htmlFor="email"
@@ -129,11 +134,10 @@ export const Contact = () => {
             </p>
           )}
         </div>
-       
-          <Button size="lg">
-            Submit <Icons.arrowRight className="ml-2 size-4" />
-          </Button>
-        
+
+        <Button size="lg">
+          Submit <Icons.arrowRight className="ml-2 size-4" />
+        </Button>
       </form>
 
       {/* <form

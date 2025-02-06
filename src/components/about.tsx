@@ -21,13 +21,13 @@ export const About = () => {
       <SectionHeading heading="About Me" />
       <div className="-mt-5 max-w-2xl text-center leading-7">
         <p className="mb-4">
-          I'm currently studying at the Bachelor of Information Technology
-          Study Program, Faculty of Computer Science, Universitas Brawijaya.
-          I'm very interested in Information Technology and Web
-          Programming. During my study, I learned basic to advanced concepts in
-          programming, database, and operating system. My main interest is web
-          and mobile apps development, where I can combine creativity and
-          programming logic to create innovative and functional solutions.
+          I'm currently studying at the Bachelor of Information Technology Study
+          Program, Faculty of Computer Science, Universitas Brawijaya. I'm very
+          interested in Information Technology and Web Programming. During my
+          study, I learned basic to advanced concepts in programming, database,
+          and operating system. My main interest is web and mobile apps
+          development, where I can combine creativity and programming logic to
+          create innovative and functional solutions.
         </p>
         <p>
           I'm open to job opportunities where I can apply my skills, continue

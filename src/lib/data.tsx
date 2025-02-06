@@ -60,7 +60,8 @@ export const projectsData = [
   {
     image: '/projects/urbanFest.png',
     title: 'Urban Fest',
-    description: 'Website to book a table and view the food list at Urban Feast Restaurant',
+    description:
+      'Website to book a table and view the food list at Urban Feast Restaurant',
     technologies: ['React', 'Inertia.js', 'Laravel', 'Tailwind', 'MySQL'],
     links: {
       preview: '#',
