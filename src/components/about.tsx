@@ -21,8 +21,8 @@ export const About = () => {
       <SectionHeading heading="About Me" />
       <div className="-mt-5 max-w-2xl text-center leading-7">
         <p className="mb-4">
-          I'm currently studying at the Bachelor of Information Technology Study
-          Program, Faculty of Computer Science, Universitas Brawijaya. I'm very
+          I&apos;m currently studying at the Bachelor of Information Technology Study
+          Program, Faculty of Computer Science, Universitas Brawijaya. I&apos;m very
           interested in Information Technology and Web Programming. During my
           study, I learned basic to advanced concepts in programming, database,
           and operating system. My main interest is web and mobile apps
@@ -30,7 +30,7 @@ export const About = () => {
           create innovative and functional solutions.
         </p>
         <p>
-          I'm open to job opportunities where I can apply my skills, continue
+          I&apos;m open to job opportunities where I can apply my skills, continue
           learning, and grow professionally. If you have a suitable opportunity
           that aligns with my experience, feel free to reach out to me.
         </p>

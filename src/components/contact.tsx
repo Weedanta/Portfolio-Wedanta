@@ -17,22 +17,9 @@ export const Contact = () => {
   const { ref } = useSectionInView('Contact');
   const {
     register,
-    handleSubmit,
     reset,
     formState: { errors },
   } = useForm<TFormSchema>({ resolver: zodResolver(formSchema) });
-
-  const onSubmit = async (values: TFormSchema) => {
-    const { data, error } = await sendEmail(values);
-
-    if (error) {
-      toast.error(error);
-      return;
-    }
-
-    toast.success(data);
-    reset();
-  };
 
   return (
     <motion.section

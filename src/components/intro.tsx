@@ -6,6 +6,8 @@ import Link from 'next/link';
 import { Button } from '@/components/button';
 import { Icons } from '@/components/icons';
 import { useSectionInView } from '@/hooks/use-section-in-view';
+import Image from 'next/image';
+import { style } from 'framer-motion/client';
 
 export const Intro = () => {
   const { ref } = useSectionInView('Home');
@@ -26,7 +28,7 @@ export const Intro = () => {
         href="https://github.com/Weedanta"
         className="bg-muted mb-4 overflow-hidden rounded-full md:w-72"
       >
-        <img src="/img/profile.png" className="w-full object-cover" alt="" />
+        <Image src="/img/profile.png" width={'2000'} height={'2000'} className="w-full object-cover" alt="" />
       </motion.a>
       <motion.h1
         initial={{ opacity: 0, y: 100 }}

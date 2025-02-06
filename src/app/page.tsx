@@ -7,7 +7,6 @@ import { Intro } from '@/components/intro';
 import { Projects } from '@/components/projects';
 import { SectionDivider } from '@/components/section-divider';
 import { ThemeToggle } from '@/components/theme-toggle';
-import { projectsData } from '@/lib/data';
 
 const Home = async () => {
   return (

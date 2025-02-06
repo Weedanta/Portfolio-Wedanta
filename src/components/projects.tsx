@@ -7,9 +7,9 @@ import { SectionHeading } from '@/components/section-heading';
 import { useSectionInView } from '@/hooks/use-section-in-view';
 import { projectsData } from '@/lib/data';
 
-type TProps = {
-  starsCount: number[];
-};
+// type TProps = {
+//   starsCount: number[];
+// };
 
 export const Projects = () => {
   const { ref } = useSectionInView('Projects');

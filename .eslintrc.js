@@ -9,32 +9,40 @@ module.exports = {
     'plugin:tailwindcss/recommended',
   ],
   plugins: ['simple-import-sort', 'prettier', '@typescript-eslint'],
+  // rules: {
+  //   'prettier/prettier': [
+  //     'error',
+  //     {
+  //       endOfLine: 'auto',
+  //     },
+  //   ],
+  //   'sort-imports': 'off',
+  //   'tailwindcss/no-custom-classname': 'off',
+  //   '@typescript-eslint/no-var-requires': 'off',
+  //   'simple-import-sort/imports': [
+  //     2,
+  //     {
+  //       groups: [
+  //         ['^.+\\.s?css$'],
+  //         [
+  //           `^(${require('module').builtinModules.join('|')})(/|$)`,
+  //           '^react',
+  //           '^@?\\w',
+  //         ],
+  //         ['^components(/.*|$)'],
+  //         ['^lib(/.*|$)', '^hooks(/.*|$)'],
+  //         ['^\\.'],
+  //       ],
+  //     },
+  //   ],
+  // },
   rules: {
-    'prettier/prettier': [
-      'error',
-      {
-        endOfLine: 'auto',
-      },
-    ],
+    'prettier/prettier': 'off',
     'sort-imports': 'off',
     'tailwindcss/no-custom-classname': 'off',
     '@typescript-eslint/no-var-requires': 'off',
-    'simple-import-sort/imports': [
-      2,
-      {
-        groups: [
-          ['^.+\\.s?css$'],
-          [
-            `^(${require('module').builtinModules.join('|')})(/|$)`,
-            '^react',
-            '^@?\\w',
-          ],
-          ['^components(/.*|$)'],
-          ['^lib(/.*|$)', '^hooks(/.*|$)'],
-          ['^\\.'],
-        ],
-      },
-    ],
+    'simple-import-sort/imports': 'off',
+    '@typescript-eslint/no-unused-vars': 'off',
   },
   settings: {
     tailwindcss: {

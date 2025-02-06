@@ -1,5 +1,5 @@
 module.exports = {
-  siteUrl: process.env.SITE_URL || '',
+  siteUrl: 'https://wedantaportfolio-git-main-weedantas-projects.vercel.app',
   generateRobotsTxt: true,
   generateIndexSitemap: false,
   robotsTxtOptions: {
