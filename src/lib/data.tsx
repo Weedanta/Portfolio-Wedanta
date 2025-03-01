@@ -83,14 +83,14 @@ export const experiencesData = [
     location: 'Malang City, Jawa Timur, Indonesia',
     description:
       'As an Advanced Programming Practicum Assistant, I teach Object-Oriented Programming (OOP) in Java, focusing on encapsulation, inheritance, polymorphism, and abstraction, while guiding students in creating dynamic Graphical User Interfaces (GUI) using tools like Swing or JavaFX.',
-    date: '2024',
+    date: '2025 - present',
   },
   {
     title: 'SQL Programming Practicum Assistant FILKOM UB',
     location: 'Malang City, Jawa Timur, Indonesia',
     description:
       'As an SQL Programming Practicum Assistant at FILKOM UB, I teach Data Definition Language (DDL) and Data Manipulation Language (DML), guiding students to master database operations like querying, CRUD (Create, Read, Update Delete), and structuring data for efficient and scalable database management.',
-    date: '2024',
+    date: '2025 - present',
   },
   {
     title: 'Basic Programming Practicum Assistant FILKOM UB',
