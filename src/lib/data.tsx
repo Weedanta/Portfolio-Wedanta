@@ -79,6 +79,20 @@ export const experiencesData = [
     date: '2025 - present',
   },
   {
+    title: 'Advanced Programming Practicum Assistant',
+    location: 'Malang City, Jawa Timur, Indonesia',
+    description:
+      'As an Advanced Programming Practicum Assistant, I teach Object-Oriented Programming (OOP) in Java, focusing on encapsulation, inheritance, polymorphism, and abstraction, while guiding students in creating dynamic Graphical User Interfaces (GUI) using tools like Swing or JavaFX.',
+    date: '2024',
+  },
+  {
+    title: 'SQL Programming Practicum Assistant FILKOM UB',
+    location: 'Malang City, Jawa Timur, Indonesia',
+    description:
+      'As an SQL Programming Practicum Assistant at FILKOM UB, I teach Data Definition Language (DDL) and Data Manipulation Language (DML), guiding students to master database operations like querying, CRUD (Create, Read, Update Delete), and structuring data for efficient and scalable database management.',
+    date: '2024',
+  },
+  {
     title: 'Basic Programming Practicum Assistant FILKOM UB',
     location: 'Malang City, Jawa Timur, Indonesia',
     description:
@@ -89,7 +103,7 @@ export const experiencesData = [
     title: 'Front End Developer UNIKAHIDHA 2024',
     location: 'Malang City, Jawa Timur, Indonesia',
     description:
-      'As a web developer, I designed responsive article pages using React and Tailwind CSS, implemented a secure admin login system with password authentication, and built a comprehensive CMS with Laravel and MySQL for real-time content management with performance optimization and high scalability, focusing on state management best practices to improve user experience.',
+      'As a web developer, I designed responsive article pages with React and Tailwind CSS, built a secure admin login system with password authentication, and developed a scalable CMS using Laravel and MySQL, optimizing performance and enhancing user experience through effective state management.',
     date: '2024',
   },
   {
