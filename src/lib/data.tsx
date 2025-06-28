@@ -42,8 +42,8 @@ export const projectsData = [
       'An app for bootcamp learning and CV creation to boost skills and support career growth.',
     technologies: ['HTML', 'PHP', 'JavaScript', 'Tailwind'],
     links: {
-      preview: 'https://elginbrian.github.io/DDAP-BISA-INDONESIA',
-      github: 'https://github.com/elginbrian/DDAP-BISA-INDONESIA/',
+      preview: '#',
+      github: 'https://github.com/Weedanta/Code-Camp',
     },
   },
   {
@@ -97,7 +97,7 @@ export const projectsData = [
       'GameQueue lets UB students easily book Game Corner consoles in real-time with quick admin approval.',
     technologies: ['Java', 'Kotlin', 'Firebase', 'Android'],
     links: {
-      preview: 'https://youtu.be/hwlHg0BkWIM ',
+      preview: 'https://youtu.be/hwlHg0BkWIM',
       github: 'https://github.com/PressToCode/GameQueue',
     },
   },
