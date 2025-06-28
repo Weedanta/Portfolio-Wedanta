@@ -28,8 +28,19 @@ export const projectsData = [
     image: '/projects/bisaIndonesia.png',
     title: 'BISA INDONESIA',
     description:
-      'Website about Caring for the Environment in accordance with SDG point 15',
+      'Website about Caring for the Environment in accordance with SDG point 15.',
     technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
+    links: {
+      preview: 'https://elginbrian.github.io/DDAP-BISA-INDONESIA',
+      github: 'https://github.com/elginbrian/DDAP-BISA-INDONESIA/',
+    },
+  },
+  {
+    image: '/projects/code_camp.png',
+    title: 'Code Camp',
+    description:
+      'An app for bootcamp learning and CV creation to boost skills and support career growth.',
+    technologies: ['HTML', 'PHP', 'JavaScript', 'Tailwind'],
     links: {
       preview: 'https://elginbrian.github.io/DDAP-BISA-INDONESIA',
       github: 'https://github.com/elginbrian/DDAP-BISA-INDONESIA/',
@@ -39,7 +50,7 @@ export const projectsData = [
     image: '/projects/EM.png',
     title: 'EM UB 2024',
     description:
-      'Developed a responsive company profile video page EM UB 2024 (not yet deployed 😭)',
+      'Created a fully responsive magazine & company profile video page for EM UB 2024, optimized for all devices.',
     technologies: ['React.js', 'Tailwind', 'Inertia.js'],
     links: {
       preview: 'https://em.ub.ac.id/',
@@ -61,11 +72,44 @@ export const projectsData = [
     image: '/projects/urbanFest.png',
     title: 'Urban Fest',
     description:
-      'Website to book a table and view the food list at Urban Feast Restaurant',
+      'Website to book a table and view the food list at Urban Feast Restaurant.',
     technologies: ['React', 'Inertia.js', 'Laravel', 'Tailwind', 'MySQL'],
     links: {
       preview: '#',
       github: 'https://github.com/Weedanta/PAW-Restoran',
+    },
+  },
+  {
+    image: '/projects/fakestore.png',
+    title: 'Fake Store',
+    description:
+      'Built a responsive fake store interface using the Fake Store API to display products dynamically.',
+    technologies: ['Flutter', 'Dart', 'GetX', 'Rest API'],
+    links: {
+      preview: '#',
+      github: 'https://github.com/Weedanta/Aibeecara_Project',
+    },
+  },
+  {
+    image: '/projects/game_queue.png',
+    title: 'Game Queue',
+    description:
+      'GameQueue lets UB students easily book Game Corner consoles in real-time with quick admin approval.',
+    technologies: ['Java', 'Kotlin', 'Firebase', 'Android'],
+    links: {
+      preview: 'https://youtu.be/hwlHg0BkWIM ',
+      github: 'https://github.com/PressToCode/GameQueue',
+    },
+  },
+  {
+    image: '/projects/rocket.svg',
+    title: 'Nasa Facts',
+    description:
+      'Explore NASA daily space images—new cosmic wonders every day from our vast universe.',
+    technologies: ['Next.js', 'Tailwind', 'Supabase', 'TypeScript'],
+    links: {
+      preview: 'https://nasafacts.my.id',
+      github: 'https://github.com/Weedanta/Tugas-Akhir-TIS',
     },
   },
 ] as const;
