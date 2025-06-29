@@ -112,6 +112,17 @@ export const projectsData = [
       github: 'https://github.com/Weedanta/Tugas-Akhir-TIS',
     },
   },
+  {
+    image: '/projects/itfest-logo.png',
+    title: 'IT FEST FILKOM UB 2025',
+    description:
+      'IT FEST 2025 is a national tech competition that encourages youth to create innovative, impactful solutions.',
+    technologies: ['Next.js', 'Tailwind', 'Go', 'TypeScript'],
+    links: {
+      preview: 'https://itfest-filkom.com',
+      github: 'https://github.com/syaquiii/IT-FEST-2025/',
+    },
+  },
 ] as const;
 
 export const experiencesData = [
