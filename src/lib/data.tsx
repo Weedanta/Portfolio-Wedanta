@@ -114,7 +114,7 @@ export const projectsData = [
   },
   {
     image: '/projects/itfest-logo.png',
-    title: 'IT FEST FILKOM UB 2025',
+    title: 'IT FEST 2025',
     description:
       'IT FEST 2025 is a national tech competition that encourages youth to create innovative, impactful solutions.',
     technologies: ['Next.js', 'Tailwind', 'Go', 'TypeScript'],
