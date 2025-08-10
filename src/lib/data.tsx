@@ -128,7 +128,7 @@ export const projectsData = [
     title: 'Desa Senggreng',
     description:
       'Senggreng village website showcasing tourism, culture, and local small businesses',
-    technologies: ['Next.js', 'Tailwind', 'Go', 'TypeScript'],
+    technologies: ['Next.js', 'Tailwind', 'TypeScript'],
     links: {
       preview: 'https://desa-senggreng.vercel.app',
       github: 'https://github.com/Weedanta/Desa-Senggreng',
