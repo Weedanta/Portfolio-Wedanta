@@ -123,6 +123,28 @@ export const projectsData = [
       github: 'https://github.com/syaquiii/IT-FEST-2025/',
     },
   },
+  {
+    image: '/projects/DesaSenggreng.png',
+    title: 'Desa Senggreng',
+    description:
+      'Senggreng village website showcasing tourism, culture, and local small businesses',
+    technologies: ['Next.js', 'Tailwind', 'TypeScript'],
+    links: {
+      preview: 'https://desa-senggreng.vercel.app',
+      github: 'https://github.com/Weedanta/Desa-Senggreng',
+    },
+  },
+  {
+    image: '/projects/LogoRabraw.png',
+    title: 'Raja Brawijaya',
+    description:
+      'Smart Website for Managing attendance and meals for 850+ committee with speed, accuravy, and ease',
+    technologies: ['Next.js', 'Tailwind', 'TypeScript'],
+    links: {
+      preview: 'https://rajapanitia.ub.ac.id/',
+      github: 'https://github.com/RAJA-Brawijaya-2025/INTERNALAJA/',
+    },
+  },
 ] as const;
 
 export const experiencesData = [
