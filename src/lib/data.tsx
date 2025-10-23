@@ -156,18 +156,32 @@ export const experiencesData = [
     date: '2025 - present',
   },
   {
-    title: 'Advanced Programming Practicum Assistant',
+    title: 'Data Structure Algorithm Lab Assistant',
     location: 'Malang City, Jawa Timur, Indonesia',
     description:
-      'As an Advanced Programming Practicum Assistant, I teach Object-Oriented Programming (OOP) in Java, focusing on encapsulation, inheritance, polymorphism, and abstraction, while guiding students in creating dynamic Graphical User Interfaces (GUI) using tools like Swing or JavaFX.',
+      'Teaching Assistant for the Algorithm and Data Structure course, guiding 30+ students in understanding core concepts, assisting in lab sessions, grading, and supporting practical problem-solving activities.',
     date: '2025 - present',
   },
   {
     title: 'SQL Programming Practicum Assistant FILKOM UB',
     location: 'Malang City, Jawa Timur, Indonesia',
     description:
-      'As an SQL Programming Practicum Assistant at FILKOM UB, I teach Data Definition Language (DDL) and Data Manipulation Language (DML), guiding students to master database operations like querying, CRUD (Create, Read, Update Delete), and structuring data for efficient and scalable database management.',
+      'As an SQL Practicum Assistant at FILKOM UB, I teach DDL and DML to 50+ students across 2 classes, guiding them in querying, CRUD operations, and efficient database structuring for scalable data management.',
     date: '2025 - present',
+  },
+  {
+    title: 'Speaker for the Sinau Bareng',
+    location: 'Malang City, Jawa Timur, Indonesia',
+    description:
+      'As a speaker for the *Sinau Bareng* session attended by over 40 participants, I explained and discussed fundamental programming (Pemdas) problems, helping students strengthen their logic, algorithmic thinking, and problem-solving skills.',
+    date: '2025',
+  },
+  {
+    title: 'Advanced Programming Practicum Assistant',
+    location: 'Malang City, Jawa Timur, Indonesia',
+    description:
+      'As an Advanced Programming Practicum Assistant, I teach OOP in Java to 35+ students, focusing on encapsulation, inheritance, polymorphism, and abstraction, while guiding them in building dynamic GUIs using Swing and JavaFX.',
+    date: '2025',
   },
   {
     title: 'Basic Programming Practicum Assistant FILKOM UB',
