@@ -30,8 +30,10 @@ const fadeInAnimationVariants = {
 
 export const Project = ({ project, index }: TProps) => {
   const { image, title, description, technologies, links } = project;
-  const previewLink = links?.preview?.trim?.() ?? '';
-  const githubLink = links?.github?.trim?.() ?? '';
+
+  const previewLink = 'preview' in links ? (links.preview?.trim?.() ?? '') : '';
+  const githubLink = 'github' in links ? (links.github?.trim?.() ?? '') : '';
+
   const hasPreview = Boolean(previewLink && previewLink !== '#');
   const hasGithub = Boolean(githubLink && githubLink !== '#');
 
