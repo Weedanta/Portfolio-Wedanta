@@ -166,14 +166,14 @@ export const experiencesData = [
     date: '2025',
   },
   {
-    title: 'Publication and Information Technology (PIT) Staff',
+    title: 'PIT RAJA BRAWIJAYA',
     location: 'Malang City, Jawa Timur, Indonesia',
     description:
       'PIT staff for RAJA Brawijaya 2025, contributing to the development of web-based attendance and operational systems used by 850+ committee members during the event.',
     date: '2025',
   },
   {
-    title: 'Web Develope Tini Salon',
+    title: 'Web Developer Tini Salon',
     location: 'Malang City, Jawa Timur, Indonesia',
     description:
       'Built a company profile website for Tini Salon featuring service information and training programs, designed with a clean and responsive interface for easy content updates.',
@@ -187,7 +187,7 @@ export const experiencesData = [
     date: '2025',
   },
   {
-    title: 'Programmer Desa Senggreng',
+    title: 'Programmer Senggreng Village',
     location: 'Malang Regency, Jawa Timur, Indonesia',
     description:
       'Developed a village website for Desa Senggreng, including the village profile, information for 4 tourism destinations, and showcases for 4 local UMKM to support digital promotion and community outreach.',

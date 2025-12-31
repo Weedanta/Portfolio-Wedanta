@@ -1,13 +1,14 @@
 'use client';
 
 import 'react-vertical-timeline-component/style.min.css';
-import React from 'react';
+import React, { useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from 'react-vertical-timeline-component';
 
+import { Button } from '@/components/button';
 import { Icons } from '@/components/icons';
 import { SectionHeading } from '@/components/section-heading';
 import { useSectionInView } from '@/hooks/use-section-in-view';
@@ -59,6 +60,12 @@ const TimelineElement = ({
 
 export const Experience = () => {
   const { ref: sectionRef } = useSectionInView('Experience');
+  const [showAll, setShowAll] = useState(false);
+
+  const visibleExperiences = showAll
+    ? experiencesData
+    : experiencesData.slice(0, 6);
+  const hasMore = experiencesData.length > 6;
 
   return (
     <section ref={sectionRef} id="experience" className="my-10 scroll-mt-28">
@@ -67,13 +74,20 @@ export const Experience = () => {
         content="Professional experience that I have accumulated over several years."
       />
       <VerticalTimeline lineColor="hsl(var(--muted))">
-        {experiencesData.map((experience, index) => (
+        {visibleExperiences.map((experience, index) => (
           <TimelineElement
             key={index} // Gunakan index atau unique identifier dari data
             {...experience}
           />
         ))}
       </VerticalTimeline>
+      {hasMore && (
+        <div className="mt-4 flex justify-center">
+          <Button variant="outline" onClick={() => setShowAll((prev) => !prev)}>
+            {showAll ? 'Show less' : 'Show all'}
+          </Button>
+        </div>
+      )}
     </section>
   );
 };
