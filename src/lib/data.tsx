@@ -160,42 +160,42 @@ export const projectsData = [
 export const experiencesData = [
   {
     title: 'Head of Information Technology Publication Department KBMDSI 2025',
-    location: 'Malang City, Jawa Timur, Indonesia',
+    location: 'Malang City, East Java, Indonesia',
     description:
       "Responsible for leading the development of web publication platforms, designing digital architecture, optimizing content management, and directing web-based information technology publication strategies to increase the organization's digital visibility and interaction.",
     date: '2025',
   },
   {
     title: 'PIT RAJA BRAWIJAYA',
-    location: 'Malang City, Jawa Timur, Indonesia',
+    location: 'Malang City, East Java, Indonesia',
     description:
       'PIT staff for RAJA Brawijaya 2025, contributing to the development of web-based attendance and operational systems used by 850+ committee members during the event.',
     date: '2025',
   },
   {
     title: 'Web Developer Tini Salon',
-    location: 'Malang City, Jawa Timur, Indonesia',
+    location: 'Medan City, North Sumatra, Indonesia',
     description:
       'Built a company profile website for Tini Salon featuring service information and training programs, designed with a clean and responsive interface for easy content updates.',
     date: '2025',
   },
   {
     title: 'Lead Organizer Coding Services',
-    location: 'Malang City, Jawa Timur, Indonesia',
+    location: 'Malang City, East Java, Indonesia',
     description:
       'Led the Coding Services program by managing the planning and development of multiple web platforms to support digital needs and improve coordination across KBMDSI departments.',
     date: '2025',
   },
   {
     title: 'Programmer Senggreng Village',
-    location: 'Malang Regency, Jawa Timur, Indonesia',
+    location: 'Malang Regency, East Java, Indonesia',
     description:
       'Developed a village website for Desa Senggreng, including the village profile, information for 4 tourism destinations, and showcases for 4 local UMKM to support digital promotion and community outreach.',
     date: '2025',
   },
   {
     title: 'Front-End Developer IT FEST FILKOM',
-    location: 'Malang City, Jawa Timur, Indonesia',
+    location: 'Malang City, East Java, Indonesia',
     description:
       'Developed a responsive competition registration website for IT FEST FILKOM, including team data management, category selection, and form validation to ensure accurate submissions and a smooth user experience.',
     date: '2025',
@@ -203,49 +203,49 @@ export const experiencesData = [
 
   {
     title: 'Data Structure Algorithm Lab Assistant',
-    location: 'Malang City, Jawa Timur, Indonesia',
+    location: 'Malang City, East Java, Indonesia',
     description:
       'Teaching Assistant for the Algorithm and Data Structure course, guiding 30+ students in understanding core concepts, assisting in lab sessions, grading, and supporting practical problem-solving activities.',
     date: '2025',
   },
   {
     title: 'SQL Programming Practicum Assistant FILKOM UB',
-    location: 'Malang City, Jawa Timur, Indonesia',
+    location: 'Malang City, East Java, Indonesia',
     description:
       'As an SQL Practicum Assistant at FILKOM UB, I teach DDL and DML to 50+ students across 2 classes, guiding them in querying, CRUD operations, and efficient database structuring for scalable data management.',
     date: '2025',
   },
   {
     title: 'Speaker for the Sinau Bareng',
-    location: 'Malang City, Jawa Timur, Indonesia',
+    location: 'Malang City, East Java, Indonesia',
     description:
       'As a speaker for the *Sinau Bareng* session attended by over 40 participants, I explained and discussed fundamental programming (Pemdas) problems, helping students strengthen their logic, algorithmic thinking, and problem-solving skills.',
     date: '2025',
   },
   {
     title: 'Advanced Programming Practicum Assistant',
-    location: 'Malang City, Jawa Timur, Indonesia',
+    location: 'Malang City, East Java, Indonesia',
     description:
       'As an Advanced Programming Practicum Assistant, I teach OOP in Java to 35+ students, focusing on encapsulation, inheritance, polymorphism, and abstraction, while guiding them in building dynamic GUIs using Swing and JavaFX.',
     date: '2025',
   },
   {
     title: 'Basic Programming Practicum Assistant FILKOM UB',
-    location: 'Malang City, Jawa Timur, Indonesia',
+    location: 'Malang City, East Java, Indonesia',
     description:
       'As a Basic Programming Practicum Assistant, I am responsible for teaching Java, guiding students in understanding basic programming concepts, explaining syntax, data structures, and software development methodologies, as well as providing practical directions and effective coding solutions to improve their programming skills.',
     date: '2024',
   },
   {
     title: 'Front End Developer UNIKAHIDHA 2024',
-    location: 'Malang City, Jawa Timur, Indonesia',
+    location: 'Malang City, East Java, Indonesia',
     description:
       'As a web developer, I designed responsive article pages with React and Tailwind CSS, built a secure admin login system with password authentication, and developed a scalable CMS using Laravel and MySQL, optimizing performance and enhancing user experience through effective state management.',
     date: '2024',
   },
   {
     title: 'Staff of Internal Resource Development Department UNIKAHIDHA 2024',
-    location: 'Malang City, Jawa Timur, Indonesia',
+    location: 'Malang City, East Java, Indonesia',
     description:
       "As a staff of UNIKAHIDHA's internal resource development department, I initiated the formation of a strong internal environment, focusing on improving the quality of the board through comprehensive internalization and building solid family ties between members, encouraging personal and collective growth of the organization.",
     date: '2024',
@@ -253,14 +253,14 @@ export const experiencesData = [
   {
     title:
       'Ministry of Communication and Information Intern as Front-end Web Developer EM UB 2024',
-    location: 'Malang City, Jawa Timur, Indonesia',
+    location: 'Malang City, East Java, Indonesia',
     description:
       'As a Ministry of Communication and Information Intern and Front-end Web Developer, I developed a company profile page with responsive video, creating an intuitive user interface with advanced video playback features, including playback controls, full-screen mode, and video quality adjustment for optimal user experience across multiple devices by using React and Tailwind CSS.',
     date: '2024',
   },
   {
     title: 'Assitant Coordinator of the Competition Division HBCC 2024',
-    location: 'Malang City, Jawa Timur, Indonesia',
+    location: 'Malang City, East Java, Indonesia',
     description:
       'As the assistant coordinator of the competition division HBCC 2024, I contribute to the preservation of Hindu culture in the context of modern life, designing creative competitions that encourage the younger generation to explore and appreciate Hindu cultural heritage through various innovative and inspiring competition categories.',
     date: '2024',
@@ -268,7 +268,7 @@ export const experiencesData = [
   {
     title:
       'Admin and Web Developer of Information Technology Publication Department KBMDSI 2024',
-    location: 'Malang City, Jawa Timur, Indonesia',
+    location: 'Malang City, East Java, Indonesia',
     description:
       'The role of KBMDSI Admin and web developers is to channel digital information that turns articles into interesting content, through uploading, editing, and optimizing websites, with a focus on visual and informative quality, while learning React and Tailwind CSS for web development.',
     date: '2024',
