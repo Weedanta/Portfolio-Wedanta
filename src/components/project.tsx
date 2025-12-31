@@ -30,6 +30,10 @@ const fadeInAnimationVariants = {
 
 export const Project = ({ project, index }: TProps) => {
   const { image, title, description, technologies, links } = project;
+  const previewLink = links?.preview?.trim?.() ?? '';
+  const githubLink = links?.github?.trim?.() ?? '';
+  const hasPreview = Boolean(previewLink && previewLink !== '#');
+  const hasGithub = Boolean(githubLink && githubLink !== '#');
 
   return (
     <motion.div
@@ -61,16 +65,20 @@ export const Project = ({ project, index }: TProps) => {
         ))}
       </div>
       <div className="mt-2 flex">
-        <Button variant="outline" asChild className="mr-2 px-5">
-          <a href={links.preview} aria-label="preview project">
-            <Icons.preview className="size-5" />
-          </a>
-        </Button>
-        <Button variant="outline" asChild className="mr-2 px-5">
-          <a href={links.github} aria-label="github">
-            <Icons.githubOutline className="size-5" />
-          </a>
-        </Button>
+        {hasPreview && (
+          <Button variant="outline" asChild className="mr-2 px-5">
+            <a href={previewLink} aria-label="preview project">
+              <Icons.preview className="size-5" />
+            </a>
+          </Button>
+        )}
+        {hasGithub && (
+          <Button variant="outline" asChild className="mr-2 px-5">
+            <a href={githubLink} aria-label="github">
+              <Icons.githubOutline className="size-5" />
+            </a>
+          </Button>
+        )}
       </div>
     </motion.div>
   );
