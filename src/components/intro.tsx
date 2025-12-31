@@ -26,9 +26,15 @@ export const Intro = () => {
           duration: 0.2,
         }}
         href="https://github.com/Weedanta"
-        className="bg-muted mb-4 overflow-hidden rounded-full w-64 md:w-72"
+        className="bg-muted mb-4 w-64 overflow-hidden rounded-full md:w-72"
       >
-        <Image src="/img/profile.png" width={'2000'} height={'2000'} className="w-full object-cover" alt="" />
+        <Image
+          src="/img/profile.png"
+          width={'2000'}
+          height={'2000'}
+          className="w-full object-cover"
+          alt=""
+        />
       </motion.a>
       <motion.h1
         initial={{ opacity: 0, y: 100 }}
@@ -45,9 +51,10 @@ export const Intro = () => {
         }}
         className="text-muted-foreground max-w-lg"
       >
-        I&apos;m front-end web and mobile developer from Indonesia. I enjoy
-        building sites and apps. I&apos;m Undergraduate Information Technology
-        Student at Brawijaya University
+        I&apos;m a Full-Stack Web and Mobile Developer from Indonesia with
+        experience building scalable websites and applications. I&apos;m an
+        Undergraduate Information Technology student at Brawijaya University and
+        a CachyOS user.
       </motion.p>
       <motion.div
         initial={{ opacity: 0, y: 100 }}
