@@ -141,8 +141,18 @@ export const projectsData = [
       'Smart Website for Managing attendance and meals for 850+ committee with speed, accuravy, and ease',
     technologies: ['Next.js', 'Tailwind', 'TypeScript'],
     links: {
-      preview: 'https://rajapanitia.ub.ac.id/',
       github: 'https://github.com/RAJA-Brawijaya-2025/INTERNALAJA/',
+    },
+  },
+  {
+    image: '/projects/kbmdsi.webp',
+    title: 'KBMDSI 2025',
+    description:
+      'Official KBMDSI 2025 website built as a central platform for organizational information and activities.',
+    technologies: ['Laravel', 'React', 'Tailwind', 'MySQL'],
+    links: {
+      preview: 'https://kbmdsi.ub.ac.id/',
+      github: 'https://github.com/KBMDSI/KBMDSI_NEWBANGET',
     },
   },
 ] as const;
@@ -153,21 +163,57 @@ export const experiencesData = [
     location: 'Malang City, Jawa Timur, Indonesia',
     description:
       "Responsible for leading the development of web publication platforms, designing digital architecture, optimizing content management, and directing web-based information technology publication strategies to increase the organization's digital visibility and interaction.",
-    date: '2025 - present',
+    date: '2025',
   },
+  {
+    title: 'Publication and Information Technology (PIT) Staff',
+    location: 'Malang City, Jawa Timur, Indonesia',
+    description:
+      'PIT staff for RAJA Brawijaya 2025, contributing to the development of web-based attendance and operational systems used by 850+ committee members during the event.',
+    date: '2025',
+  },
+  {
+    title: 'Web Develope Tini Salon',
+    location: 'Malang City, Jawa Timur, Indonesia',
+    description:
+      'Built a company profile website for Tini Salon featuring service information and training programs, designed with a clean and responsive interface for easy content updates.',
+    date: '2025',
+  },
+  {
+    title: 'Lead Organizer Coding Services',
+    location: 'Malang City, Jawa Timur, Indonesia',
+    description:
+      'Led the Coding Services program by managing the planning and development of multiple web platforms to support digital needs and improve coordination across KBMDSI departments.',
+    date: '2025',
+  },
+  {
+    title: 'Programmer Desa Senggreng',
+    location: 'Malang Regency, Jawa Timur, Indonesia',
+    description:
+      'Developed a village website for Desa Senggreng, including the village profile, information for 4 tourism destinations, and showcases for 4 local UMKM to support digital promotion and community outreach.',
+    date: '2025',
+  },
+  {
+    title: 'Front-End Developer IT FEST FILKOM',
+    location: 'Malang City, Jawa Timur, Indonesia',
+    description:
+      'Developed a responsive competition registration website for IT FEST FILKOM, including team data management, category selection, and form validation to ensure accurate submissions and a smooth user experience.',
+    date: '2025',
+  },
+
   {
     title: 'Data Structure Algorithm Lab Assistant',
     location: 'Malang City, Jawa Timur, Indonesia',
     description:
       'Teaching Assistant for the Algorithm and Data Structure course, guiding 30+ students in understanding core concepts, assisting in lab sessions, grading, and supporting practical problem-solving activities.',
-    date: '2025 - present',
+    date: '2025',
   },
   {
     title: 'SQL Programming Practicum Assistant FILKOM UB',
     location: 'Malang City, Jawa Timur, Indonesia',
     description:
       'As an SQL Practicum Assistant at FILKOM UB, I teach DDL and DML to 50+ students across 2 classes, guiding them in querying, CRUD operations, and efficient database structuring for scalable data management.',
-    date: '2025 - present',
+    date: '2025',
   },
   {
     title: 'Speaker for the Sinau Bareng',
