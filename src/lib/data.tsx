@@ -155,6 +155,17 @@ export const projectsData = [
       github: 'https://github.com/KBMDSI/KBMDSI_NEWBANGET',
     },
   },
+  {
+    image: '/projects/tinisalon.webp',
+    title: 'Tini Salon Medan',
+    description:
+      'Tini Salon Medan website built as a profile for beauty programs and professional style suggestions.',
+    technologies: ['Nextjs', 'Typescript', 'Shadcnx', 'Tailwind'],
+    links: {
+      preview: 'https://tinisalonmdan.baguswedanta.com',
+      github: 'https://github.com/Weedanta/TiniSalon',
+    },
+  },
 ] as const;
 
 export const experiencesData = [
