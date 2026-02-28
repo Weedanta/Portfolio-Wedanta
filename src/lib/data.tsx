@@ -162,7 +162,7 @@ export const projectsData = [
       'Tini Salon Medan website built as a profile for beauty programs and professional style suggestions.',
     technologies: ['Nextjs', 'Typescript', 'Shadcnx', 'Tailwind'],
     links: {
-      preview: 'https://tinisalonmdan.baguswedanta.com',
+      preview: 'https://tinisalonmedan.baguswedanta.com',
       github: 'https://github.com/Weedanta/TiniSalon',
     },
   },
