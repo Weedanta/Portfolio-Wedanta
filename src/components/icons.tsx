@@ -5,6 +5,7 @@ import {
   Download,
   ExternalLink,
   Github,
+  Loader2,
   LucideProps,
   Moon,
   Star,
@@ -21,6 +22,7 @@ export const Icons = {
   briefcase: Briefcase,
   chevronDown: ChevronDown,
   star: Star,
+  loader: Loader2,
   github: (props: LucideProps) => (
     <svg viewBox="0 0 24 24" {...props}>
       <path
