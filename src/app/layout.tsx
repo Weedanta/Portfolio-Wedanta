@@ -4,6 +4,7 @@ import { PropsWithChildren } from 'react';
 import type { Metadata } from 'next';
 
 import { ActiveSectionProvider } from '@/components/active-section-provider';
+import { MouseGlow } from '@/components/mouse-glow';
 import { ThemeProvider } from '@/components/theme-provider';
 import { Toaster } from '@/components/toaster';
 import { fonts } from '@/lib/fonts';
@@ -32,6 +33,7 @@ const RootLayout = ({ children }: PropsWithChildren) => {
     <html lang="en" suppressHydrationWarning>
       <body className={cn('min-h-screen font-sans', fonts)}>
         <ThemeProvider attribute="class">
+          <MouseGlow />
           <ActiveSectionProvider>
             {children}
             <Toaster position="bottom-left" />
