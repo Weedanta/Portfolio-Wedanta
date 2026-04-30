@@ -51,10 +51,12 @@ export const Intro = () => {
         }}
         className="text-muted-foreground max-w-lg"
       >
-        I&apos;m a Full-Stack Web and Mobile Developer from Indonesia with
-        experience building scalable websites and applications. I&apos;m an
-        Undergraduate Information Technology student at Brawijaya University and
-        a CachyOS user.
+        I&apos;m an Information Technology student from Indonesia with hands-on
+        experience in full-stack web and mobile development, and a growing focus
+        on system analysis and design. I enjoy both building solutions and
+        understanding the bigger picture, from writing code to analyzing
+        requirements and designing systems that work. I&apos;m a CachyOS user
+        BTW.
       </motion.p>
       <motion.div
         initial={{ opacity: 0, y: 100 }}
