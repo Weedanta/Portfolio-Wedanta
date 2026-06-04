@@ -23,16 +23,16 @@ interface Particle {
 
 const PALETTE = {
   dark: {
-    primary: { r: 99, g: 102, b: 241, a: 0.12 }, // Indigo
-    secondary: { r: 244, g: 63, b: 94, a: 0.08 }, // Rose
-    core: { r: 253, g: 224, b: 71, a: 0.2 }, // Amber/Gold
-    trail: { r: 165, g: 180, b: 252, a: 0.35 }, // Light Indigo
+    primary: { r: 239, g: 68, b: 68, a: 0.15 }, // Fire Red/Crimson (Red-500)
+    secondary: { r: 249, g: 115, b: 22, a: 0.18 }, // Amber/Orange (Orange-500)
+    core: { r: 254, g: 240, b: 138, a: 0.4 }, // Bright Fire Yellow (Yellow-200)
+    trail: { r: 251, g: 146, b: 60, a: 0.85 }, // Hot Spark (Orange-400)
   },
   light: {
-    primary: { r: 147, g: 197, b: 253, a: 0.06 }, // Sky Blue
-    secondary: { r: 253, g: 164, b: 186, a: 0.04 }, // Pink
-    core: { r: 255, g: 255, b: 255, a: 0.5 }, // White
-    trail: { r: 147, g: 197, b: 253, a: 0.25 }, // Sky Blue
+    primary: { r: 254, g: 202, b: 202, a: 0.14 }, // Soft warm red
+    secondary: { r: 254, g: 215, b: 170, a: 0.18 }, // Soft warm orange
+    core: { r: 254, g: 240, b: 138, a: 0.45 }, // Soft warm yellow
+    trail: { r: 249, g: 115, b: 22, a: 0.6 }, // Soft amber spark
   },
 };
 
@@ -159,14 +159,19 @@ export const MouseGlow = () => {
         glow.coreX += (mouse.targetX - glow.coreX) * 0.18;
         glow.coreY += (mouse.targetY - glow.coreY) * 0.18;
 
-        // 1. Draw Large Outer Ambient Glow (Soft Indigo)
+        // Introduce a natural fire flicker
+        const time = Date.now() * 0.006;
+        const flicker =
+          1.0 + Math.sin(time) * 0.04 + (Math.random() - 0.5) * 0.03;
+
+        // 1. Draw Large Outer Ambient Glow (Soft Fire Red)
         const primaryRadGrd = ctx.createRadialGradient(
           glow.primaryX,
           glow.primaryY,
           0,
           glow.primaryX,
           glow.primaryY,
-          380
+          380 * flicker
         );
         primaryRadGrd.addColorStop(
           0,
@@ -176,24 +181,24 @@ export const MouseGlow = () => {
           0.5,
           toRgbString(
             colors.primary,
-            colors.primary.a * 0.3 * mouse.globalOpacity
+            colors.primary.a * 0.35 * mouse.globalOpacity
           )
         );
         primaryRadGrd.addColorStop(1, 'rgba(0, 0, 0, 0)');
 
         ctx.fillStyle = primaryRadGrd;
         ctx.beginPath();
-        ctx.arc(glow.primaryX, glow.primaryY, 380, 0, Math.PI * 2);
+        ctx.arc(glow.primaryX, glow.primaryY, 380 * flicker, 0, Math.PI * 2);
         ctx.fill();
 
-        // 2. Draw Secondary Inner Glow (Soft Rose)
+        // 2. Draw Secondary Inner Glow (Flame Orange)
         const secondaryRadGrd = ctx.createRadialGradient(
           glow.secondaryX,
           glow.secondaryY,
           0,
           glow.secondaryX,
           glow.secondaryY,
-          220
+          220 * flicker
         );
         secondaryRadGrd.addColorStop(
           0,
@@ -213,17 +218,25 @@ export const MouseGlow = () => {
 
         ctx.fillStyle = secondaryRadGrd;
         ctx.beginPath();
-        ctx.arc(glow.secondaryX, glow.secondaryY, 220, 0, Math.PI * 2);
+        ctx.arc(
+          glow.secondaryX,
+          glow.secondaryY,
+          220 * flicker,
+          0,
+          Math.PI * 2
+        );
         ctx.fill();
 
-        // 3. Draw Core Glow (Bright Amber/Gold)
+        // 3. Draw Core Glow (Bright Yellow/Gold Center)
+        const coreFlicker =
+          1.0 + Math.sin(time * 1.8) * 0.08 + (Math.random() - 0.5) * 0.05;
         const coreRadGrd = ctx.createRadialGradient(
           glow.coreX,
           glow.coreY,
           0,
           glow.coreX,
           glow.coreY,
-          70
+          75 * coreFlicker
         );
         coreRadGrd.addColorStop(
           0,
@@ -231,27 +244,42 @@ export const MouseGlow = () => {
         );
         coreRadGrd.addColorStop(
           0.5,
-          toRgbString(colors.core, colors.core.a * 0.2 * mouse.globalOpacity)
+          toRgbString(colors.core, colors.core.a * 0.3 * mouse.globalOpacity)
         );
         coreRadGrd.addColorStop(1, 'rgba(0, 0, 0, 0)');
 
         ctx.fillStyle = coreRadGrd;
         ctx.beginPath();
-        ctx.arc(glow.coreX, glow.coreY, 70, 0, Math.PI * 2);
+        ctx.arc(glow.coreX, glow.coreY, 75 * coreFlicker, 0, Math.PI * 2);
         ctx.fill();
       }
 
-      // 4. Update and Draw Elegant Star-Dust Particles
+      // 4. Update and Draw elegant sparks/embers drifting upwards
       const particles = particlesRef.current;
       for (let i = particles.length - 1; i >= 0; i--) {
         const p = particles[i];
-        p.x += p.vx;
-        p.y += p.vy;
+
+        // Convection draft: apply upward acceleration and wave sway
+        p.vy -= 0.08;
+        p.vx += Math.sin(p.y * 0.03 + p.alpha * 10) * 0.08;
+
         p.vx *= 0.95; // drag/damping
         p.vy *= 0.95;
+
+        p.x += p.vx;
+        p.y += p.vy;
+
+        // Shrink ember size as it cools down
+        p.size = Math.max(0.5, p.size - p.decay * 6);
+
+        // Cool down color: yellow/orange -> red -> dark red
+        p.color.r = Math.min(255, p.color.r + 2);
+        p.color.g = Math.max(10, p.color.g - 3.5);
+        p.color.b = Math.max(0, p.color.b - 3);
+
         p.alpha -= p.decay;
 
-        if (p.alpha <= 0.005) {
+        if (p.alpha <= 0.005 || p.size <= 0.6) {
           particles.splice(i, 1);
           continue;
         }
@@ -266,6 +294,7 @@ export const MouseGlow = () => {
           p.size
         );
         particleGrd.addColorStop(0, toRgbString(p.color, p.color.a));
+        particleGrd.addColorStop(0.4, toRgbString(p.color, p.color.a * 0.7)); // hot center
         particleGrd.addColorStop(1, 'rgba(0, 0, 0, 0)');
 
         ctx.fillStyle = particleGrd;
@@ -307,25 +336,24 @@ export const MouseGlow = () => {
 
       mouse.isVisible = true;
 
-      // Periodic floating particle trail generation
+      // Periodic floating particle trail generation (upward drifting embers)
       const now = Date.now();
-      if (now - lastEmitTime.current > 35) {
+      if (now - lastEmitTime.current > 30) {
         lastEmitTime.current = now;
-        const count = Math.random() > 0.65 ? 2 : 1;
+        const count = Math.random() > 0.5 ? 2 : 1;
         const colors = colorsRef.current;
 
         for (let k = 0; k < count; k++) {
-          const angle = Math.random() * Math.PI * 2;
-          const speed = Math.random() * 0.7 + 0.2;
           particlesRef.current.push({
-            x: e.clientX + (Math.random() - 0.5) * 8,
-            y: e.clientY + (Math.random() - 0.5) * 8,
-            vx: Math.cos(angle) * speed,
-            vy: Math.sin(angle) * speed,
-            alpha: Math.random() * 0.5 + 0.35,
-            size: Math.random() * 12 + 6,
-            color: { ...colors.trail },
-            decay: Math.random() * 0.012 + 0.008,
+            x: e.clientX + (Math.random() - 0.5) * 16,
+            y: e.clientY + (Math.random() - 0.5) * 16,
+            vx: (Math.random() - 0.5) * 1.0,
+            vy: -Math.random() * 1.5 - 0.5, // initial upward rise
+            alpha: Math.random() * 0.6 + 0.4,
+            size: Math.random() * 6 + 3, // embers are smaller and sharper
+            color:
+              Math.random() > 0.35 ? { ...colors.core } : { ...colors.trail },
+            decay: Math.random() * 0.015 + 0.008,
           });
         }
       }
@@ -334,19 +362,19 @@ export const MouseGlow = () => {
     // Elegant tactile burst of particles on click
     const handleMouseClick = (e: MouseEvent) => {
       const colors = colorsRef.current;
-      const particleCount = 12;
+      const particleCount = 20; // more sparks on click
       for (let i = 0; i < particleCount; i++) {
         const angle = Math.random() * Math.PI * 2;
-        const speed = Math.random() * 3 + 1.2;
+        const speed = Math.random() * 4 + 1.5;
         particlesRef.current.push({
           x: e.clientX,
           y: e.clientY,
           vx: Math.cos(angle) * speed,
-          vy: Math.sin(angle) * speed,
+          vy: Math.sin(angle) * speed - 1.0, // upward bias
           alpha: 1.0,
-          size: Math.random() * 16 + 8,
+          size: Math.random() * 10 + 4,
           color: Math.random() > 0.5 ? { ...colors.core } : { ...colors.trail },
-          decay: Math.random() * 0.024 + 0.016,
+          decay: Math.random() * 0.02 + 0.01,
         });
       }
     };
