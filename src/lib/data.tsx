@@ -166,6 +166,17 @@ export const projectsData = [
       github: 'https://github.com/Weedanta/TiniSalon',
     },
   },
+  {
+    image: '/projects/doltrip.png',
+    title: 'DolTrip Lovina',
+    description:
+      'An online booking platform for dolphin watching and snorkeling adventures.',
+    technologies: ['Vite', 'TypeScript', 'Tailwind'],
+    links: {
+      preview: 'https://doltriplovina.my.id',
+      github: 'https://github.com/Weedanta/Dolphin',
+    },
+  },
 ] as const;
 
 export const experiencesData = [
