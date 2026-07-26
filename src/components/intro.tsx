@@ -7,7 +7,6 @@ import { Button } from '@/components/button';
 import { Icons } from '@/components/icons';
 import { useSectionInView } from '@/hooks/use-section-in-view';
 import Image from 'next/image';
-import { style } from 'framer-motion/client';
 
 export const Intro = () => {
   const { ref } = useSectionInView('Home');
@@ -19,7 +18,7 @@ export const Intro = () => {
       className="my-10 flex scroll-mt-96 flex-col items-center gap-4 text-center sm:mt-10"
     >
       <motion.a
-        initial={{ opacity: 0, scale: 0 }}
+        initial={{ opacity: 1, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{
           type: 'tween',
@@ -30,10 +29,12 @@ export const Intro = () => {
       >
         <Image
           src="/img/profile.png"
-          width={'2000'}
-          height={'2000'}
+          width={288}
+          height={288}
+          priority
+          sizes="(max-width: 768px) 256px, 288px"
           className="w-full object-cover"
-          alt=""
+          alt="Bagus Wedanta"
         />
       </motion.a>
       <motion.h1
