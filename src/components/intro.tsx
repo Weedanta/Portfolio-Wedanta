@@ -38,14 +38,14 @@ export const Intro = () => {
         />
       </motion.a>
       <motion.h1
-        initial={{ opacity: 0, y: 100 }}
+        initial={{ opacity: 1, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         className="text-3xl font-bold leading-tight tracking-tighter sm:text-4xl"
       >
         Hello, I&apos;m Bagus Wedanta.
       </motion.h1>
       <motion.p
-        initial={{ opacity: 0, y: 100 }}
+        initial={{ opacity: 1, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
           delay: 0.1,
@@ -60,7 +60,7 @@ export const Intro = () => {
         BTW.
       </motion.p>
       <motion.div
-        initial={{ opacity: 0, y: 100 }}
+        initial={{ opacity: 1, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
           delay: 0.1,

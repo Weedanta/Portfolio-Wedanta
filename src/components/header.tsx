@@ -24,7 +24,7 @@ export const Header = () => {
 
   return (
     <motion.header
-      initial={{ y: -100, opacity: 0 }}
+      initial={{ y: -10, opacity: 1 }}
       animate={{ y: 0, opacity: 1 }}
       className="sm:bg-secondary/80 sticky top-5 z-20 my-5 flex items-center gap-2 sm:top-10 sm:my-10 sm:rounded-full sm:px-2 sm:py-3 sm:backdrop-blur-sm"
     >
