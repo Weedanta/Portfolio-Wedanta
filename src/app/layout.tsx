@@ -3,13 +3,19 @@ import '@/styles/globals.css';
 import { PropsWithChildren } from 'react';
 import type { Metadata } from 'next';
 
+import dynamic from 'next/dynamic';
+
 import { ActiveSectionProvider } from '@/components/active-section-provider';
-import { MouseGlow } from '@/components/mouse-glow';
 import { ThemeProvider } from '@/components/theme-provider';
 import { Toaster } from '@/components/toaster';
 import { fonts } from '@/lib/fonts';
 import { siteConfig } from '@/lib/site-config';
 import { cn } from '@/lib/utils';
+
+const MouseGlow = dynamic(
+  () => import('@/components/mouse-glow').then((mod) => mod.MouseGlow),
+  { ssr: false }
+);
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
