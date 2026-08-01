@@ -16,6 +16,7 @@ import {
 import { Icons } from '@/components/icons';
 import { ThemeToggle } from '@/components/theme-toggle';
 import { links } from '@/lib/data';
+import { cn } from '@/lib/utils';
 
 export const Header = () => {
   const [open, setOpen] = useState(false);
@@ -58,13 +59,18 @@ export const Header = () => {
         </DialogContent>
       </Dialog>
       <ThemeToggle className="sm:hidden" />
-      <nav className="text-muted-foreground hidden text-sm sm:block">
+      <nav className="hidden text-sm sm:block">
         <ul className="flex gap-5">
           {links.map(({ name, hash }) => (
             <li key={name}>
               <Link
                 href={hash}
-                className="hover:text-foreground relative px-4 py-2 transition-colors"
+                className={cn(
+                  'relative px-4 py-2 transition-colors',
+                  name === activeSection
+                    ? 'font-semibold text-zinc-950 dark:text-white'
+                    : 'text-zinc-600 hover:text-zinc-950 dark:text-zinc-400 dark:hover:text-zinc-100'
+                )}
                 onClick={() => {
                   setActiveSection(name);
                   setTimeOfLastClick(Date.now());

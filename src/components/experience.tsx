@@ -59,7 +59,7 @@ const TimelineElement = ({
 };
 
 export const Experience = () => {
-  const { ref: sectionRef } = useSectionInView('Experience');
+  const { ref: sectionRef } = useSectionInView('Experience', 0.15);
   const [showAll, setShowAll] = useState(false);
 
   const visibleExperiences = showAll
