@@ -11,6 +11,7 @@ import {
   Star,
   Sun,
 } from 'lucide-react';
+import { SiCachyos, SiGo, SiKotlin, SiPostgresql } from 'react-icons/si';
 
 export const Icons = {
   sun: Sun,
@@ -287,4 +288,10 @@ export const Icons = {
       </g>
     </svg>
   ),
+  go: (props: LucideProps) => <SiGo className={props.className} />,
+  postgres: (props: LucideProps) => (
+    <SiPostgresql className={props.className} />
+  ),
+  kotlin: (props: LucideProps) => <SiKotlin className={props.className} />,
+  cachyos: (props: LucideProps) => <SiCachyos className={props.className} />,
 };

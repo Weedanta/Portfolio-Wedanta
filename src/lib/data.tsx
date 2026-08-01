@@ -69,17 +69,6 @@ export const projectsData = [
     },
   },
   {
-    image: '/projects/urbanFest.png',
-    title: 'Urban Fest',
-    description:
-      'Website to book a table and view the food list at Urban Feast Restaurant.',
-    technologies: ['React', 'Inertia.js', 'Laravel', 'Tailwind', 'MySQL'],
-    links: {
-      preview: '#',
-      github: 'https://github.com/Weedanta/PAW-Restoran',
-    },
-  },
-  {
     image: '/projects/fakestore.png',
     title: 'Fake Store',
     description:
@@ -177,9 +166,56 @@ export const projectsData = [
       github: 'https://github.com/Weedanta/Dolphin',
     },
   },
+  {
+    image: '/projects/AnsBalon.png',
+    title: 'Ans Balon',
+    description:
+      'A landing page for a local MSME balloon business, showcasing custom bouquets and gifts.',
+    technologies: ['Next.js', 'Tailwind', 'Framer Motion'],
+    links: {
+      preview: 'https://ansbalonsingaraja.web.id',
+      github: '#',
+    },
+  },
+  {
+    image: '/projects/Learn2Love.jpg',
+    title: 'Learn2Love',
+    description:
+      'A safe and welcoming platform for women to move, reflect, connect honestly, and grow together.',
+    technologies: ['Next.js', 'Supabase', 'Framer Motion'],
+    links: {
+      preview: 'https://learn2-love.vercel.app',
+      github: '#',
+    },
+  },
+  {
+    image: '/projects/PoseCashier.webp',
+    title: 'PoseCashier',
+    description:
+      'A store management system for inventory tracking, sales transactions, and expense management.',
+    technologies: ['Kotlin', 'Supabase', 'Android'],
+    links: {
+      preview: '#',
+      github: 'https://github.com/PressToCode/pamt-pos-kasir-ktx-app',
+    },
+  },
 ] as const;
 
 export const experiencesData = [
+  {
+    title: 'IT Consultant Krisna Agung Property',
+    location: 'Bali, Indonesia',
+    description:
+      'Designing an integrated HRIS covering performance tracking, payroll, profit and promotion management, WhatsApp integration, and AI features.',
+    date: '2026',
+  },
+  {
+    title: 'Backend Developer Dunia Prestasi',
+    location: 'Bali, Indonesia',
+    description:
+      'Building the backend for Dunia Prestasi, to be developed further for web and mobile apps covering an LMS, payments, and exams.',
+    date: '2026',
+  },
   {
     title: 'Head of Information Technology Publication Department KBMDSI 2025',
     location: 'Malang City, East Java, Indonesia',
@@ -298,15 +334,15 @@ export const experiencesData = [
 ] as const;
 
 export const skillsData = [
+  { icon: <Icons.typescript className="size-12" /> },
   { icon: <Icons.react className="size-12" /> },
   { icon: <Icons.laravel className="size-12" /> },
-  { icon: <Icons.flutter className="size-12" /> },
-  { icon: <Icons.tailwind className="size-12" /> },
-  { icon: <Icons.docker className="size-12" /> },
-  { icon: <Icons.typescript className="size-12" /> },
-  { icon: <Icons.mysql className="size-12" /> },
-  { icon: <Icons.framerMotion className="size-12" /> },
-  { icon: <Icons.bootstrap className="size-12" /> },
+  { icon: <Icons.go className="size-12" /> },
   { icon: <Icons.python className="size-12" /> },
   { icon: <Icons.java className="size-12" /> },
+  { icon: <Icons.kotlin className="size-12" /> },
+  { icon: <Icons.flutter className="size-12" /> },
+  { icon: <Icons.postgres className="size-12" /> },
+  { icon: <Icons.docker className="size-12" /> },
+  { icon: <Icons.cachyos className="size-12" /> },
 ] as const;

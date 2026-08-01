@@ -12,7 +12,7 @@ import { projectsData } from '@/lib/data';
 // };
 
 export const Projects = () => {
-  const { ref } = useSectionInView('Projects');
+  const { ref } = useSectionInView('Projects', 0.1);
 
   return (
     <section ref={ref} id="projects" className="my-10 scroll-mt-28">
