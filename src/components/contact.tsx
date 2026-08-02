@@ -72,13 +72,11 @@ export const Contact = () => {
           <>
             Please contact me directly at{' '}
             <Button
+              asChild
               variant="link"
-              className="text-muted-foreground p-0 font-medium"
+              className="text-muted-foreground px-1 font-medium"
             >
-              <a
-                className="underline-offset-4 hover:underline"
-                href="mailto:baguswedanta17@gmail.com"
-              >
+              <a href="mailto:baguswedanta17@gmail.com">
                 baguswedanta17@gmail.com
               </a>
             </Button>{' '}
