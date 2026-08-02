@@ -85,8 +85,7 @@ export const Intro = () => {
         <Button variant="secondary" size="icon" asChild>
           <a
             href="https://www.linkedin.com/in/baguswedanta/"
-            aria-label="Linkedin"
-            download
+            aria-label="LinkedIn"
           >
             <Icons.linkedin className="size-6" />
           </a>

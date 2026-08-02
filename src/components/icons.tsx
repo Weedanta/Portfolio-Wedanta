@@ -288,10 +288,17 @@ export const Icons = {
       </g>
     </svg>
   ),
-  go: (props: LucideProps) => <SiGo className={props.className} />,
+  // react-icons hardcodes role="img" on its <svg>. Left unnamed that trips the
+  // svg-img-alt audit, so these are hidden from the a11y tree and the label is
+  // supplied by the role="img" wrapper in <Skills />.
+  go: (props: LucideProps) => <SiGo className={props.className} aria-hidden />,
   postgres: (props: LucideProps) => (
-    <SiPostgresql className={props.className} />
+    <SiPostgresql className={props.className} aria-hidden />
   ),
-  kotlin: (props: LucideProps) => <SiKotlin className={props.className} />,
-  cachyos: (props: LucideProps) => <SiCachyos className={props.className} />,
+  kotlin: (props: LucideProps) => (
+    <SiKotlin className={props.className} aria-hidden />
+  ),
+  cachyos: (props: LucideProps) => (
+    <SiCachyos className={props.className} aria-hidden />
+  ),
 };

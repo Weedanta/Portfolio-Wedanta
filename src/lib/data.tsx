@@ -334,15 +334,15 @@ export const experiencesData = [
 ] as const;
 
 export const skillsData = [
-  { icon: <Icons.typescript className="size-12" /> },
-  { icon: <Icons.react className="size-12" /> },
-  { icon: <Icons.laravel className="size-12" /> },
-  { icon: <Icons.go className="size-12" /> },
-  { icon: <Icons.python className="size-12" /> },
-  { icon: <Icons.java className="size-12" /> },
-  { icon: <Icons.kotlin className="size-12" /> },
-  { icon: <Icons.flutter className="size-12" /> },
-  { icon: <Icons.postgres className="size-12" /> },
-  { icon: <Icons.docker className="size-12" /> },
-  { icon: <Icons.cachyos className="size-12" /> },
+  { name: 'TypeScript', icon: <Icons.typescript className="size-12" /> },
+  { name: 'React', icon: <Icons.react className="size-12" /> },
+  { name: 'Laravel', icon: <Icons.laravel className="size-12" /> },
+  { name: 'Go', icon: <Icons.go className="size-12" /> },
+  { name: 'Python', icon: <Icons.python className="size-12" /> },
+  { name: 'Java', icon: <Icons.java className="size-12" /> },
+  { name: 'Kotlin', icon: <Icons.kotlin className="size-12" /> },
+  { name: 'Flutter', icon: <Icons.flutter className="size-12" /> },
+  { name: 'PostgreSQL', icon: <Icons.postgres className="size-12" /> },
+  { name: 'Docker', icon: <Icons.docker className="size-12" /> },
+  { name: 'CachyOS', icon: <Icons.cachyos className="size-12" /> },
 ] as const;
