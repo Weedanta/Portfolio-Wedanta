@@ -13,12 +13,14 @@ const Home = async () => {
     <>
       <div className="container flex flex-col items-center">
         <Header />
-        <Intro />
-        <SectionDivider />
-        <About />
-        <Projects />
-        <Experience />
-        <Contact />
+        <main className="flex w-full flex-col items-center">
+          <Intro />
+          <SectionDivider />
+          <About />
+          <Projects />
+          <Experience />
+          <Contact />
+        </main>
         <Footer />
       </div>
       <ThemeToggle className="fixed bottom-5 right-5 hidden sm:bottom-8 sm:right-8 sm:flex" />

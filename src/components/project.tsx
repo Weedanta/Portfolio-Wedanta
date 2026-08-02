@@ -54,7 +54,7 @@ export const Project = ({ project, index }: TProps) => {
           alt={`${title} image`}
           width={32}
           height={32}
-          className="size-6"
+          className="size-6 object-contain"
         />
       </div>
       <h3 className="my-2 text-lg font-medium">{title}</h3>
