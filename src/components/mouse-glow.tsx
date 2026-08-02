@@ -89,13 +89,20 @@ export const MouseGlow = () => {
     let animationId: number;
     let isRunning = true;
 
+    // Viewport size is cached here and refreshed on resize only. Reading
+    // window.innerWidth/innerHeight inside the rAF loop forces a layout on
+    // every frame, which Lighthouse reports as a forced reflow.
+    const viewport = { width: 0, height: 0 };
+
     // Handle high DPI scaling for crisp visuals
     const resizeCanvas = () => {
       const dpr = window.devicePixelRatio || 1;
-      canvas.width = window.innerWidth * dpr;
-      canvas.height = window.innerHeight * dpr;
-      canvas.style.width = `${window.innerWidth}px`;
-      canvas.style.height = `${window.innerHeight}px`;
+      viewport.width = window.innerWidth;
+      viewport.height = window.innerHeight;
+      canvas.width = viewport.width * dpr;
+      canvas.height = viewport.height * dpr;
+      canvas.style.width = `${viewport.width}px`;
+      canvas.style.height = `${viewport.height}px`;
       ctx.scale(dpr, dpr);
     };
 
@@ -122,10 +129,7 @@ export const MouseGlow = () => {
     const render = () => {
       if (!isRunning) return;
 
-      const width = window.innerWidth;
-      const height = window.innerHeight;
-
-      ctx.clearRect(0, 0, width, height);
+      ctx.clearRect(0, 0, viewport.width, viewport.height);
 
       const mouse = mouseRef.current;
       const glow = glowRef.current;
