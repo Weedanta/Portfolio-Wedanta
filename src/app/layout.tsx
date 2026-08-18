@@ -27,7 +27,15 @@ export const metadata: Metadata = {
   keywords: siteConfig.keywords,
   robots: { index: true, follow: true },
   icons: {
-    icon: '/favicon/logo.png',
+    icon: '/favicon.ico',
+  },
+  openGraph: {
+    title: siteConfig.title,
+    description: siteConfig.description,
+    url: siteConfig.url,
+    siteName: siteConfig.title,
+    locale: 'en_US',
+    type: 'website',
   },
   verification: {
     google: siteConfig.googleSiteVerificationId,
