@@ -12,8 +12,11 @@ import { fonts } from '@/lib/fonts';
 import { siteConfig } from '@/lib/site-config';
 import { cn } from '@/lib/utils';
 
-const MouseGlow = dynamic(
-  () => import('@/components/mouse-glow').then((mod) => mod.MouseGlow),
+const BackgroundBoxesLayer = dynamic(
+  () =>
+    import('@/components/background-boxes-layer').then(
+      (mod) => mod.BackgroundBoxesLayer
+    ),
   { ssr: false }
 );
 
@@ -47,7 +50,7 @@ const RootLayout = ({ children }: PropsWithChildren) => {
     <html lang="en" suppressHydrationWarning>
       <body className={cn('min-h-screen font-sans', fonts)}>
         <ThemeProvider attribute="class">
-          <MouseGlow />
+          <BackgroundBoxesLayer />
           <ActiveSectionProvider>
             {children}
             <Toaster position="bottom-left" />
