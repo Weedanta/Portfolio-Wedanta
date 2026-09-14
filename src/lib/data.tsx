@@ -167,6 +167,17 @@ export const projectsData = [
     },
   },
   {
+    image: '/projects/DolphinLovinaDewata.png',
+    title: 'Dolphin Lovina Dewata',
+    description:
+      'A booking website for sunrise dolphin watching, swimming, and snorkeling trips in Lovina, North Bali.',
+    technologies: ['Next.js', 'TypeScript', 'Tailwind'],
+    links: {
+      preview: 'https://dolphinlovinadewata-aldi.vercel.app',
+      github: '#',
+    },
+  },
+  {
     image: '/projects/AnsBalon.png',
     title: 'Ans Balon',
     description:
