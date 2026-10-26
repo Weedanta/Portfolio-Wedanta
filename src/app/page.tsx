@@ -2,13 +2,17 @@ import { About } from '@/components/about';
 import { Contact } from '@/components/contact';
 import { Experience } from '@/components/experience';
 import { Footer } from '@/components/footer';
+import { GithubActivity } from '@/components/github-activity';
 import { Header } from '@/components/header';
 import { Intro } from '@/components/intro';
 import { Projects } from '@/components/projects';
 import { SectionDivider } from '@/components/section-divider';
 import { ThemeToggle } from '@/components/theme-toggle';
+import { getGithubContributions } from '@/lib/github';
 
 const Home = async () => {
+  const contributions = await getGithubContributions();
+
   return (
     <>
       <div className="container flex flex-col items-center">
@@ -18,6 +22,7 @@ const Home = async () => {
           <SectionDivider />
           <About />
           <Projects />
+          {contributions && <GithubActivity contributions={contributions} />}
           <Experience />
           <Contact />
         </main>
