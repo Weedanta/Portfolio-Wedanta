@@ -210,6 +210,17 @@ export const projectsData = [
       github: 'https://github.com/PressToCode/pamt-pos-kasir-ktx-app',
     },
   },
+  {
+    image: '/projects/KubuHobbit.png',
+    title: 'Kubu Hobbit',
+    description:
+      'A tourism website for the hobbit house village in Pedawa, Bali, with activities, local MSMEs, and online ticket booking.',
+    technologies: ['Laravel', 'React', 'Inertia.js', 'Tailwind'],
+    links: {
+      preview: 'https://kubuhobbit.com',
+      github: '#',
+    },
+  },
 ] as const;
 
 export const experiencesData = [
