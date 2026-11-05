@@ -8,7 +8,7 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-baguswedanta-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/baguswedanta/)
 [![GitHub](https://img.shields.io/badge/GitHub-Weedanta-181717?style=for-the-badge&logo=github)](https://github.com/Weedanta)
 
-This is the source code for my personal portfolio — built to showcase my projects, professional experience, and skills as an Information Technology student and full-stack developer.
+This is the source code for my personal portfolio  built to showcase my projects, professional experience, and skills as an Information Technology student and full-stack developer.
 
 </div>
 
@@ -18,11 +18,11 @@ This is the source code for my personal portfolio — built to showcase my proje
 
 A fast, responsive, and animated personal portfolio site built with **Next.js 14** (App Router) and **TypeScript**. It features smooth scroll-based navigation, dark/light theme support, and a playful mouse-glow canvas effect.
 
-- 🏠 **Home** — introduction, resume download, and social links
-- 👤 **About** — background, skills, and tech stack
-- 💼 **Projects** — a growing collection of real-world web & mobile projects
-- 🧭 **Experience** — a vertical timeline of professional and organizational roles
-- ✉️ **Contact** — a working contact form powered by EmailJS
+- 🏠 **Home** - introduction, resume download, and social links
+- 👤 **About** - background, skills, and tech stack
+- 💼 **Projects** - a growing collection of real-world web & mobile projects
+- 🧭 **Experience** - a vertical timeline of professional and organizational roles
+- ✉️ **Contact** - a working contact form powered by EmailJS
 
 ## 🛠️ Tech Stack
 
@@ -60,7 +60,7 @@ npm install
 Create a `.env.local` file in the project root:
 
 ```env
-# Required — used to power the contact form
+# Required  used to power the contact form
 NEXT_PUBLIC_EMAILJS_SERVICE_ID=
 NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=
 NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=
